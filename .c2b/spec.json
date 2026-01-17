@@ -1,0 +1,25 @@
+{
+  "project_name": "discord-ping-bot",
+  "framework": "discord.py",
+  "goal": "Discord Botで、Bot自身またはサーバーのping値を測定する。",
+  "features": [
+    "pingコマンドによるping測定",
+    "Bot自身またはサーバーを選択可能"
+  ],
+  "dependencies": [
+    "discord.py"
+  ],
+  "env_vars": [
+    "DISCORD_TOKEN"
+  ],
+  "assumptions": [
+    "Botは一つのDiscordサーバーにのみ参加する",
+    "データは保存せず、Botの再起動でリセットされる"
+  ],
+  "non_goals": [
+    "複雑な権限管理機能",
+    "ping値の履歴保存や統計機能",
+    "複数サーバーへの対応"
+  ],
+  "user_request": "ping測定"
+}
